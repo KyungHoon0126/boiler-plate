@@ -17,7 +17,7 @@ import Reducer from './_reducers'
 const createStoreWidthMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode> 
     {/* Provider : React랑 Redux랑 연결시킨다. */}
     <Provider
         store={createStoreWidthMiddleware(Reducer,
